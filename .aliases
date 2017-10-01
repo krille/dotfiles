@@ -1,20 +1,6 @@
-# PATH
-PATH=/usr/local/bin:$PATH
-PATH=$HOME/bin:$PATH
-export PATH
-
-# Owner
-export DEFAULT_USER="kristofer"
-
-# FileSearch
-#function f() { find . -iname "*$1*" ${@:2} }
-#function r() { grep "$1" ${@:2} -R . }
-
-#mkdir and cd
-#function mkcd() { mkdir -p "$@" && cd "$_"; }
-
-# Use VSC for editing config files
-alias envconfig="code ~/Dropbox/User/env.sh"
+# Use VSC for editing aliases and functions
+alias aliases="code ~/Dropbox/User/dotfiles/.aliases"
+alias functions="code ~/Dropbox/User/dotfiles/.functions"
 
 # Git
 alias g="git"
