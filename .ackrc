@@ -1,0 +1,32 @@
+# only search with case sensitivity if there is mixed case
+--smart-case
+
+# follow symlinks
+--follow
+
+# color settings
+--color-filename=white
+--color-lineno=cyan
+--color-match=magenta underline
+
+# search other filetypes
+--type-set=sass:ext:scss,sass
+--type-set=less:ext:less
+--type-set=style:ext:css,scss,sass,less
+--type-set=markdown:ext:markdown,md
+
+# ignore some dirs
+--ignore-dir=build
+--ignore-dir=vendor/bundle
+--ignore-dir=.idea
+--ignore-dir=tmp
+--ignore-dir=log
+--ignore-dir=.tmp
+--ignore-dir=coverage
+--ignore-dir=dist
+--ignore-dir=bower_components
+
+# ignore some files
+--ignore-file=is:tags
+--ignore-file=is:.tags
+--ignore-file=is:.example_statuses
