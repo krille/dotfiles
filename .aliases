@@ -7,8 +7,25 @@ alias g="git"
 alias ga="git add"
 alias gco="git checkout"
 alias gst="git status"
+
+# Undo the last commit, but preserve the staging area
+alias undo="git reset --soft HEAD^"
+
+# Removes all unstaged files
 alias nah="git reset --hard && git clean -df"
+
+# Sneak changes into your previous commit
+alias sneak="git commit -a --amend --no-edit"
+
+# See today’s work
+alias today="git log --since=\"00:00:00\" --all --no-merges --oneline --author=kristofer.westling@gmail.com"
+
+# Pretty log
 alias glog="git log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
+
+# Nicer diffs for prose
+alias wdiff="git diff --word-diff"
+
 
 # Shortcuts
 alias d="cd ~/Dropbox"
