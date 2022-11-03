@@ -2,8 +2,10 @@ oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH/powerlevel10k_rainbow.omp.j
 
 Import-Module -Name Terminal-Icons
 
-function Cd-Projects { & cd C:\Source\Repos }
-New-Alias -Name p -Value Cd-Projects
+New-Alias -Name c -Value Clear-Host
+
+function Get-Projects { & Set-Location C:\Source\Repos }
+New-Alias -Name p -Value Get-Projects
 
 function Get-Git { & git $args }
 New-Alias -Name g -Value Get-Git -Force -Option AllScope
