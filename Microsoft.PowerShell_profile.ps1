@@ -1,7 +1,9 @@
 oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH/powerlevel10k_rainbow.omp.json" | Invoke-Expression
 
+Import-Module -Name Terminal-Icons
+
 function Cd-Projects { & cd C:\Source\Repos }
-New-Alias -Name cdp -Value Cd-Projects
+New-Alias -Name p -Value Cd-Projects
 
 function Get-Git { & git $args }
 New-Alias -Name g -Value Get-Git -Force -Option AllScope
